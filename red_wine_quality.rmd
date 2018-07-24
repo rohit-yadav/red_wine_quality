@@ -459,3 +459,13 @@ details about of the wine I could have done more in finding out the variability
 of the quality, The data was described in 2009 and as things changes over the
 time today this correlation of alcohol and volatile acidity might not be the
 same in today's world.
+
+# Reference
+
+* ggpair documentation for plot matrix [here](https://www.rdocumentation.org/packages/GGally/versions/1.4.0/topics/ggpairs).
+
+* About [Linear Model](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwiw6IeRt7fcAhXLsY8KHQ0GDRwQFggpMAE&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLinear_model&usg=AOvVaw38KON0TNfgRAWFJiKDQQAq).
+
+* About [Correlation](https://www.surveysystem.com/correlation.htm).
+
+* ggplot documentation [here](https://www.rdocumentation.org/packages/ggplot2/versions/3.0.0).

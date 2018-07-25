@@ -147,7 +147,7 @@ quality?
 
 ```{r echo=FALSE}
 ggplot(aes(x = quality), data = wine) +
-  geom_histogram(binwidth = 1)
+  geom_bar()
 ```
 
 The data in quality is an integer. A bulk of the rating is either 5 or 6. Will

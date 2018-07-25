@@ -362,6 +362,7 @@ Very simple to use and comprehend the result.
 
 Limitations:
 Linear regression is very sensitive to the anomalies in the data.
+
 ------
 
 # Final Plots and Summary

@@ -255,7 +255,8 @@ ggplot(aes(x = fixed.acidity, y = pH), data = wine) +
   coord_cartesian(xlim = c(5.5, 13))
 ```
 
-Re-plotting the above plot. Like our earlier finding in plot matrix they do have a strong correlation.
+Re-plotting the above plot. Like our earlier finding in plot matrix they do have
+a strong correlation.
 
 ```{r echo=FALSE}
 ggplot(aes(x = quality, y = citric.acid), data = wine) +

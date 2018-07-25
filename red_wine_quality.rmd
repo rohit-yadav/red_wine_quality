@@ -162,6 +162,13 @@ wine$quality_category <- cut(wine$quality, c(3,5,8))
 I created a categorical variable that will help in visualizing in a more
 appropriate way.
 
+```{r echo=FALSE}
+ggplot(aes(x = quality_category), data=subset(wine, !is.na(quality_category))) +
+  geom_bar()
+```
+
+So, most of the wines fit into the 5-8 category.
+
 # Univariate Analysis
 
 ### What is the structure of your dataset?

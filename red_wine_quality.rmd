@@ -412,7 +412,7 @@ ggplot(aes(x = alcohol, y = volatile.acidity),
   scale_x_continuous(breaks = seq(8.5,15,1)) +
   xlab("Alcohol") +
   ylab("Volatile Acidity") +
-  ggtitle("Valtile Acidity and Alcohol with Quality Category")
+  ggtitle("Volatile Acidity and Alcohol with Quality Category")
 ```
 
 ### Description Three

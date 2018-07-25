@@ -208,12 +208,12 @@ binwidth.
 
 # Bivariate Plots Section
 
-```{r echo=FALSE, message=FALSE, Bivariate_Plots}
+```{r echo=FALSE, message=FALSE, Bivariate_Plots, fig.width=12, fig.height=12}
 # Plot matrix
 ggpairs(wine,
         lower = list(continuous = wrap("points", shape = I('.'))),
         upper = list(combo = wrap("box", outlier.shape = I('.'))),
-        axisLabels = 'internal', columns = c('fixed.acidity','volatile.acidity',
+        columns = c('fixed.acidity','volatile.acidity',
                                 'citric.acid','free.sulfur.dioxide',
                                 'total.sulfur.dioxide','density','pH',
                                 'sulphates','alcohol','quality'))

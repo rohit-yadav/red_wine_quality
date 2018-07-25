@@ -156,7 +156,7 @@ quality is 5 or 6.
 
 ```{r}
 # Create a categorical variable
-wine$quality_category <- cut(wine$quality, c(3,5,8))
+wine$quality_category <- cut(wine$quality, c(3,5,8), labels = c('low', 'high'))
 ```
 
 I created a categorical variable that will help in visualizing in a more
@@ -167,7 +167,7 @@ ggplot(aes(x = quality_category), data=subset(wine, !is.na(quality_category))) +
   geom_bar()
 ```
 
-So, most of the wines fit into the 5-8 category.
+So, most of the wines fit into the high category.
 
 # Univariate Analysis
 

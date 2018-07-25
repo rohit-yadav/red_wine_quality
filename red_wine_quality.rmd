@@ -357,10 +357,12 @@ strengths and limitations of your model.
 Yes, I did create models, it helped me justify the variability of quality of
 the wine due to various variables.
 
-Strengths: 
+Strengths:
+
 Very simple to use and comprehend the result.
 
 Limitations:
+
 Linear regression is very sensitive to the anomalies in the data.
 
 ------

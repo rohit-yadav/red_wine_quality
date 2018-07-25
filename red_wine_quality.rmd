@@ -194,7 +194,8 @@ most of the variables would be worth investigating.
 ### Did you create any new variables from existing variables in the dataset?
 
 Yes, I created a quality_category where it categories the quality score. I
-divided the score into two categories - 3-5 and 5-8.
+divided the score into two categories - Low for score between 3-5 and high for
+score between 5-8.
 
 ### Of the features you investigated, were there any unusual distributions? \
 Did you perform any operations on the data to tidy, adjust, or change the form \
@@ -438,11 +439,11 @@ descriptive statistics which gave an idea of the spread, mean, median and the
 quartile range. Understanding the variables help me in exploring the variables
 with the plot. Initially, I went with the uni-variable plots along the course I
 put up some questions which helped me in exploring in the later stage. Most of
-the variables were have a normal distribution and a few were skewed. I did
+the variables were having a normal distribution and a few were skewed. I did
 encounter outlier which was surprising as well. I did create a categorical
 variable which grouped the quality into two groups, the quality of wine from 3
-to 5 were in one group and 5 to 8 were in a different group. This variable
-helped me in getting deeper insights into the later stage of the exploration.
+to 5 were in one group as low and 5 to 8 were in a different group as high. This variable helped me in getting deeper insights into the later stage of the
+exploration.
 
 With the plot matrix, I got a clear idea of how the variables are related to one another. This matrix showed how alcohol was strongly correlated to the quality
 of the wine, it also helped me in selecting the variables of my interest which

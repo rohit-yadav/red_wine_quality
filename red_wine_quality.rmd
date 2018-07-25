@@ -259,14 +259,14 @@ Re-plotting the above plot. Like our earlier finding in plot matrix they do have
 
 ```{r echo=FALSE}
 ggplot(aes(x = quality, y = citric.acid), data = wine) +
-  geom_jitter()
+  geom_jitter(alpha = 1/15)
 ```
 
 Not a single wine got a quality score as 8, when the citric acid is 0.
 
 ```{r echo=FALSE}
 ggplot(aes(x = volatile.acidity, y = quality), data = wine) +
-  geom_jitter()
+  geom_jitter(alpha = 1/15)
 ```
 
 Lesser the volatile acidity better the quality.
@@ -370,19 +370,18 @@ Linear regression is very sensitive to the anomalies in the data.
 # To centre the title
 theme_update(plot.title = element_text(hjust = 0.5))
 
-ggplot(aes(x = citric.acid), data = wine) +
-  geom_histogram(binwidth = 0.001) +
-  scale_y_continuous(breaks = seq(0, 150, 25)) +
-  xlab("Citric Acid") +
-  ylab("Count") +
-  ggtitle("Citric Acid - Count")
+ggplot(aes(x = volatile.acidity, y = quality), data = wine) +
+  geom_jitter(alpha = 1/15, color = 'red') +
+  scale_x_continuous(breaks = seq(0.12, 1.58, .1)) +
+  xlab("Volatile Acidity") +
+  ylab("Quality") +
+  ggtitle("Volatile Acidity vs Quality")
 ```
 
 ### Description One
 
-As per metadata citric acid is used in small amount, it can add freshness and
-flavour to the wine. However, it didn't have a strong effect on the wine
-quality. This might justify the peak at 0.
+We can clearly see that wine with volatile acidity between 0.22 and 0.92 have a
+good quality score. 
 
 ### Plot Two
 

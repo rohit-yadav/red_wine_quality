@@ -377,8 +377,8 @@ theme_update(plot.title = element_text(hjust = 0.5))
 ggplot(aes(x = volatile.acidity, y = quality), data = wine) +
   geom_jitter(alpha = 1/15, color = 'red') +
   scale_x_continuous(breaks = seq(0.12, 1.58, .1)) +
-  xlab("Volatile Acidity") +
-  ylab("Quality") +
+  xlab("Volatile Acidity (g / dm^3)") +
+  ylab("Quality (score - 0 and 10)") +
   ggtitle("Volatile Acidity vs Quality")
 ```
 
@@ -393,8 +393,8 @@ good quality score.
 ggplot(aes(x = alcohol, y = quality), data = wine) +
   geom_jitter(colour="blue", alpha = 1/15) +
   scale_x_continuous(breaks = seq(8,15,.5)) +
-  xlab("Alcohol") +
-  ylab("Quality") +
+  xlab("Alcohol (% by volume)") +
+  ylab("Quality (score - 0 and 10)") +
   ggtitle("Alcohol vs Quality")
 ```
 
@@ -410,8 +410,8 @@ ggplot(aes(x = alcohol, y = volatile.acidity),
        data = subset(wine, !is.na(quality_category))) +
   geom_point(aes(color = quality_category)) +
   scale_x_continuous(breaks = seq(8.5,15,1)) +
-  xlab("Alcohol") +
-  ylab("Volatile Acidity") +
+  xlab("Alcohol (% by volume)") +
+  ylab("Volatile Acidity (g / dm^3)") +
   ggtitle("Volatile Acidity and Alcohol with Quality Category")
 ```
 
